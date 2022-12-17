@@ -22,8 +22,6 @@ export class CancelNotification {
 
     notification.cancel();
 
-    console.log('aqui', notification);
-
     await this.notificationsRepository.save(notification);
   }
 }
